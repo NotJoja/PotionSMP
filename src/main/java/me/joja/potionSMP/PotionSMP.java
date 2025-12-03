@@ -29,12 +29,12 @@ public class PotionSMP extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerDeathListener(), this);
         getServer().getPluginManager().registerEvents(new EntityDamageListener(), this);
         getServer().getPluginManager().registerEvents(new EffectItemListener(), this);
-        getServer().getPluginManager().registerEvents(new RerollItemListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerRespawnListener(), this);
+        getServer().getPluginManager().registerEvents(new EffectTokenListener(), this);
+
 
         // Register recipes
-        RecipeManager rm = new RecipeManager(this);
-        rm.registerRerollRecipe();
+        RecipeManager.registerRecipes();
     }
 
     @Override
