@@ -1,0 +1,11 @@
+name: PotionSMP
+version: 1.0
+main: me.joja.potionSMP.PotionSMP
+api-version: 1.21
+commands:
+  withdraw:
+    description: Withdraw an effect as an item
+  effectadmin:
+    description: Admin command to manage player effects
+    usage: /effectadmin <add|remove|withdraw|reroll> <player> [effect]
+    permission: potionsmp.admin
